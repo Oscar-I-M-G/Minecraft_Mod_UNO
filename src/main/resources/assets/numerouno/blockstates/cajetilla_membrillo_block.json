@@ -1,0 +1,7 @@
+{
+  "variants":{
+    "" : {
+      "model" : "numerouno:block/cajetilla_membrillo_block"
+    }
+  }
+}

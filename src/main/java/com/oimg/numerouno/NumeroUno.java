@@ -1,7 +1,11 @@
 package com.oimg.numerouno;
 
 import com.mojang.logging.LogUtils;
+import com.oimg.numerouno.block.ModBlocks;
+import com.oimg.numerouno.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.common.CreativeModeTabRegistry;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -34,6 +38,9 @@ public class NumeroUno
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -48,7 +55,19 @@ public class NumeroUno
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
+        // adding a creative tab
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.MEMBRILLO);
+        }
+        if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
+            event.accept(ModItems.MEMBRILLO);
+            event.accept(ModItems.CAJETILLAMEMBRILLO);
+        }
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.CAJETILLA_MEMBRILLO_BLOCK);
+        }
     }
+
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
