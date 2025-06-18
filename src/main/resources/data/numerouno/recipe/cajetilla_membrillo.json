@@ -1,0 +1,25 @@
+{
+  "type" : "minecraft:crafting_shapeless",
+  "category" : "food",
+  "ingredients": [
+    {
+      "item" : "minecraft:sugar"
+    },
+    {
+      "item" : "minecraft:sugar"
+    },
+    {
+      "item" : "numerouno:membrillo"
+    },
+    {
+      "item" : "numerouno:membrillo"
+    },
+    {
+      "item" : "numerouno:membrillo"
+    }
+  ],
+  "result" : {
+    "count" : 4,
+    "id": "numerouno:cajetilla_membrillo"
+  }
+}
