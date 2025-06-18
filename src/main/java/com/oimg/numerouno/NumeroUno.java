@@ -2,6 +2,7 @@ package com.oimg.numerouno;
 
 import com.mojang.logging.LogUtils;
 import com.oimg.numerouno.block.ModBlocks;
+import com.oimg.numerouno.item.ModCreativeModeTabs;
 import com.oimg.numerouno.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -37,6 +38,9 @@ public class NumeroUno
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+        // Adding the custom creative mode tab
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);

@@ -22,8 +22,8 @@ public class ModBlocks {
 
 
     // these are for the custom blocks
-    public static final RegistryObject<Block> CAJETILLA_MEMBRILLO_BLOCK =registerBlock("cajetilla_membrillo_block.json",
-            () -> new Block(BlockBehaviour.Properties.of().strength(0,0).sound(SoundType.HONEY_BLOCK).friction(2)));
+    public static final RegistryObject<Block> CAJETILLA_MEMBRILLO_BLOCK =registerBlock("cajetilla_membrillo_block",
+            () -> new Block(BlockBehaviour.Properties.of().strength(0,0).sound(SoundType.HONEY_BLOCK)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

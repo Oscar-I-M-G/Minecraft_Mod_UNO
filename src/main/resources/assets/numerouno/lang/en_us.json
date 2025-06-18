@@ -1,5 +1,8 @@
 {
   "item.numerouno.membrillo" : "Membrillo",
   "item.numerouno.cajetilla_membrillo" : "Cajetilla de Membrillo",
-  "block.numerouno.cajetilla_membrillo_block" : "Bloque de Cajetilla de Membrillo"
+
+  "block.numerouno.cajetilla_membrillo_block" : "Bloque de cajetilla de membrillo",
+
+  "creativetab.numerouno.membrillo_items" : "Cosas del mod membrillo"
 }
