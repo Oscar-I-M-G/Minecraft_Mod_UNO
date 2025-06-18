@@ -1,0 +1,13 @@
+{
+  "type" : "minecraft:crafting_shapeless",
+  "category" : "food",
+  "ingredients" : [
+    {
+      "item" : "numerouno:cajetilla_membrillo_block"
+    }
+  ],
+  "result": {
+    "count" : 9,
+    "id": "numerouno:cajetilla_membrillo"
+  }
+}
