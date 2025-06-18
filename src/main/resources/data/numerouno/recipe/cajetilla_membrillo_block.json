@@ -1,0 +1,18 @@
+{
+  "type" : "minecraft:crafting_shaped",
+  "category" : "misc",
+  "key" : {
+    "#" : {
+      "item" : "numerouno:cajetilla_membrillo"
+    }
+  },
+  "pattern" : [
+    "###",
+    "###",
+    "###"
+  ],
+  "result" : {
+    "count" : 1,
+    "id": "numerouno:cajetilla_membrillo_block"
+  }
+}
